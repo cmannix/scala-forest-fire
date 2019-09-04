@@ -21,7 +21,7 @@ object Main extends App {
       case Some(value) => value match {
         case Fire => onFire.Evolve(b, i, j)
         case Empty => onEmpty.Evolve(b, i, j)
-        case Tree => onFire.Evolve(b, i, j)
+        case Tree => onTree.Evolve(b, i, j)
         case _ => Some(Empty)
       }
     }
