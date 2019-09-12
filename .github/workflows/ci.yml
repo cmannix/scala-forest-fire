@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: hseeberger/scala-sbt@master
+    - uses: hseeberger/scala-sbt@8u212_1.2.8_2.13.0
     - name: Build and test
       run: sbt test
