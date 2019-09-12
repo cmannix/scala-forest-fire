@@ -5,9 +5,9 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: hseeberger/scala-sbt:8u212_1.2.8_2.13.0
     
     steps:
-    - uses: hseeberger/scala-sbt@8u212_1.2.8_2.13.0
+    - uses: actions/checkout@v1
     - name: Build and test
       run: sbt test
