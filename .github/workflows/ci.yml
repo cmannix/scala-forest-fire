@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker://hseeberger/scala-sbt:8u212_1.2.8_2.13.0
+    - uses: actions/checkout@v1
+    - name: Build and test
+      run: sbt test
